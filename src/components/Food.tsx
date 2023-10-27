@@ -197,9 +197,9 @@ const fadeInAnimationVariants = {
       <div  
       className='grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4 '>
         {foods.map((item, index) => (
-          <div className='hover:scale-105 duration-300'>
+          <div key={item._id} className='hover:scale-105 duration-300'>
           <motion.div
-            key={index}
+            key={animationKey}
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"

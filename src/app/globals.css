@@ -2,26 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer components {
+  .headerDiv {
+    @apply bg-bgLight text-gray-500 flex items-center
+    justify-center p-1.5 rounded-full hover:bg-white
+    border-[1px] border-gray-200 hover:border-red-600
+    duration-200;
+  }
+  .socialLink {
+    @apply bg-slate-100 p-1 inline-flex text-darkText
+    items-center justify-center rounded-md
+    text-lg hover:bg-red-600 hover:text-white
+    cursor-pointer duration-200
+  }
+  .btnFood {
+    @apply 
+    gap-2 h-[3rem] w-[8rem] bg-slate-500 text-black 
+    rounded-full outline-none transition-all focus:scale-110 
+    hover:scale-110 hover:bg-black active:scale-105 
+     hover:text-white mr-4 mb-4 sm:mb-0 
+  }
+  .btnIcon {
+    @apply text-xs text-white opacity-70 transition-all 
+    
+  }
+  .selected {
+    @apply bg-black text-white
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.borderBlack {
+  @apply border border-black/10;
 }
+
+

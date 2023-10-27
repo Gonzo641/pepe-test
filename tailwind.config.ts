@@ -9,10 +9,22 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        "main-bg": "url('/bg-img.jpeg')",
+        "black-bg": "url('/9793.jpg')",
       },
+      colors: {
+        bodyColor: "#fbfaf7",
+        bgLight: "#1010100d",
+        darkText: "#242424",
+        lightText: "#a5a5a5",
+        redText: "#dc2626",
+      },
+      rotate: {
+        '45': '-45deg',
+      },
+      brightness: {
+        75: '.75',
+      }
     },
   },
   plugins: [],

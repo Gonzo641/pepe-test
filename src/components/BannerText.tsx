@@ -24,7 +24,7 @@ const BannerText = ({ title, description }: Props) => {
                 className=" text-sm md:text-lg text-slate-100 mb-20 sm:mb-0"
             >
                 {description} <br />
-                Venez l'essayer !
+                Venez l&apos;essayer !
             </motion.p>
             <motion.div
                 initial={{ y: 50, opacity: 0 }}

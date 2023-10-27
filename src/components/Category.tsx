@@ -1,6 +1,7 @@
 import React from 'react';
 import { categories } from '@/data/data';
 import { ItemProps } from '../../type';
+import Image from 'next/image';
 
 const CategoryComponent = ({ item }: ItemProps) => {
   return (
@@ -16,7 +17,7 @@ const CategoryComponent = ({ item }: ItemProps) => {
             className='bg-gray-100 rounded-lg p-4 flex justify-between items-center'
           >
             <h2 className='font-bold sm:text-xl'>{category.title}</h2>
-            <img src={category.image} alt={category.title} className='w-20' />
+            <Image src={category.image} alt={category.title} className='w-20' />
           </div>
         ))}
       </div>

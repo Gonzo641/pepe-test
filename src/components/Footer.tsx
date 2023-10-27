@@ -18,7 +18,7 @@ const Footer = () => {
             <div className="flex flex-col gap-y-4 ">
                 <Logo />
                 <p>
-                    Horaires d'ouverture : <br />
+                    Horaires d&apos;ouverture : <br />
                     Midi: 11h-14h
                     Soir: 18h30-23h
                 </p>

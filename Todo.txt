@@ -8,10 +8,12 @@ Check   - Formulaire Contact à redimenssioner
 Check   - Mettre à jour les data pour correspondance produits
 Check   - Changer le visuel des produits et faire anim
 Check   - Rajouter icon cart 
+Check   - Changer le Footer
         - Option menu ?
-        - Changer le Footer
         - Trouver moyen de mettre une Map
         - Une seul page pour le Menu ? Framer motion
+        - Trouver solution pour bouton submit
+         
         
 
 

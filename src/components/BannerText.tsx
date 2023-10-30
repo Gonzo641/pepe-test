@@ -30,11 +30,11 @@ const BannerText = ({ title, description }: Props) => {
                 initial={{ y: 50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1}}
                 transition={{ duration: 0.7 }}
-                className="flex flex-col md:flex-row gap-x-4 mt-2"
+                className="flex flex-col items-center md:flex-row gap-x-4 mt-2"
             >
-                <button className="py-3 px-6 rounded-full bg-slate-200
-                hover:bg-white duration-200 text-sm uppercase mb-4 sm:mb-0">Find out more</button>
-                <button className="py-3 px-6 rounded-full bg-slate-200
+                <button className="py-3 px-6 rounded-full bg-slate-200 w-[15rem]
+                hover:bg-white duration-200 text-sm uppercase mb-4 sm:mb-2 ">Find out more</button>
+                <button className="py-3 px-6 rounded-full bg-slate-200 w-[15rem]
                 hover:bg-white duration-200 text-sm uppercase">Shop Now</button>
             </motion.div>
         </Container>

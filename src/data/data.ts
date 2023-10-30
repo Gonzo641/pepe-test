@@ -57,7 +57,7 @@ export const categories = [
       _id: 2,
       title: "Mamy Burger",
       category: 'burger',
-      isNew: false,
+      isNew: true,
       price: 10.90,
       description:
         "Le classique avec sa sauce faite maison !",
@@ -287,7 +287,7 @@ export const categories = [
       quantity: 1,
     },
     {
-      _id: 2,
+      _id: 22,
       title: "Entrées3",
       category: 'entree',
       isNew: false,

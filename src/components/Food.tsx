@@ -23,6 +23,7 @@ const Food = () => {
   const [foods, setFoods] = useState(data);
 
   const [selectedCategory, setSelectedCategory] = useState('');
+  const [initialFoods, setInitialFoods] = useState(data);
 
   const [animationKey, setAnimationKey] = useState(0);
 
@@ -30,16 +31,30 @@ const Food = () => {
 
 
 
+  // const filterType = (category: string) => {
+  //   setAnimationKey(animationKey + 1)
+  //   if (selectedCategory === category) {
+  //     setFoods(data);
+  //     setSelectedCategory(category); 
+  //   } else {
+  //     setFoods(data.filter((item) => item.category === category));
+  //     setSelectedCategory(category);
+  //   }
+  //   // setAnimationKey(animationKey + 1);
+  // };
+
   const filterType = (category: string) => {
-    if (selectedCategory === category) {
-      setFoods(data);
-      setSelectedCategory(''); 
-    } else {
-      setFoods(data.filter((item) => item.category === category));
-      setSelectedCategory(category);
-    }
+    setSelectedCategory(category);
     setAnimationKey(animationKey + 1);
+    setFoods(initialFoods);
+    
+    if (category === '') {
+      setFoods(initialFoods);
+    } else {
+      setFoods(initialFoods.filter((item) => item.category === category));
+    }
   };
+
 
   //   Filter by price
   // const filterPrice = (price: string | number) => {
@@ -195,11 +210,12 @@ const fadeInAnimationVariants = {
       {/* Display foods */}
 
       <div  
-      className='grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4 '>
+      className='grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-6 pt-4 '>
         {foods.map((item, index) => (
           <div key={item._id} className='hover:scale-105 duration-300'>
+
           <motion.div
-            key={animationKey}
+            key={item._id}
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
@@ -217,13 +233,21 @@ const fadeInAnimationVariants = {
               className='w-full h-[200px] object-cover rounded-t-lg'
             />
             <div className='flex justify-between px-2 py-4'>
-              <p className='font-bold text-lg text-white'>
+              <p className='font-bold text-lg text-gray-300'>
                 {item.title}
               </p>
               <p>
                 <span className='bg-black text-white p-2 rounded-full'>
                 <FormattedPrice amount={item?.price} />
                 </span>
+              </p>
+            </div>
+            <div className='flex justify-center px-2'>
+              <span className=' bg-white w-20 h-[1px]'></span>
+            </div>
+            <div className='flex justify-start px-2 py-4'>
+              <p className='font-bold text-sm text-gray-400'>
+                {item.description}
               </p>
             </div>
             <div onClick={() =>
@@ -258,7 +282,7 @@ export default Food;
 
 
 
-
+// ---------------------------------------------------------------API
 
 // import { getProductCategory } from "@/helpers";
 // import React from "react";

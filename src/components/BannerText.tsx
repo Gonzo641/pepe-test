@@ -33,9 +33,9 @@ const BannerText = ({ title, description }: Props) => {
                 className="flex flex-col items-center md:flex-row gap-x-4 mt-2"
             >
                 <button className="py-3 px-6 rounded-full bg-slate-200 w-[15rem]
-                hover:bg-white duration-200 text-sm uppercase mb-4 sm:mb-2 ">Find out more</button>
+                hover:bg-white duration-200 text-sm uppercase mb-4 sm:mb-2 ">Découvrir</button>
                 <button className="py-3 px-6 rounded-full bg-slate-200 w-[15rem]
-                hover:bg-white duration-200 text-sm uppercase">Shop Now</button>
+                hover:bg-white duration-200 text-sm uppercase">Commander maintenant</button>
             </motion.div>
         </Container>
     </div>

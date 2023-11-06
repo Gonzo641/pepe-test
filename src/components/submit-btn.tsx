@@ -16,8 +16,8 @@ export default function SubmitBtn() {
       disabled:scale-100 disabled:bg-opacity-65 hover:text-white"
     >
 
-        <div className="h-5 w-5 animate-spin rounded-full
-                        border-b-2 border-white"></div>
+        {/* <div className="h-5 w-5 animate-spin rounded-full
+                        border-b-2 border-white"></div> */}
 
         <>
           Envoyer{" "}
@@ -28,6 +28,8 @@ export default function SubmitBtn() {
     </button>
   );
 }
+
+
 
 // import React from "react";
 // import { FaPaperPlane } from "react-icons/fa";

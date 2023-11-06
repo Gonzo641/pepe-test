@@ -13,7 +13,7 @@ const AboutPage = () => {
   return (
 
     <Container>
-      <section ref={ref} id="about" className="my-20 scroll-mt-28">
+      <section ref={ref} id="about" className="mt-20 mb-12 scroll-mt-28">
         <motion.h2 
             className="text-4xl text-white font-semibold mb-2"
             initial={{ y: 30, opacity: 0 }}

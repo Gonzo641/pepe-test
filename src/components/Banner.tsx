@@ -89,7 +89,7 @@ const Banner = () => {
                     alt="practice3" 
                     className="w-full h-[900px] relative object-cover"
                 />
-                <BannerText title="Tiramisu Fraise"description="Notre nouveau produit à durée limitée"/>
+                <BannerText title="Parfait Fraise"description="Notre nouveau produit à durée limitée"/>
             </div>
         </Slider>
         {/* <div className="absolute w-full h-44 bg-gradient-to-t from-gray-100 to-transparent bottom-0 left-0 z-10" /> */}
